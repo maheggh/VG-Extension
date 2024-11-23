@@ -1,0 +1,66 @@
+/* popup.css */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 10px;
+  width: 400px;
+}
+
+h1 {
+  color: #003082; 
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.category-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; 
+}
+
+.category-checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.category-checkbox label {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #003082; /* NRK blue */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.action-button:hover {
+  background-color: #0054a6; /* Lighter blue on hover */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 3px;
+}
